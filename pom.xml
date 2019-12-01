@@ -6,7 +6,7 @@
     <parent>
         <artifactId>horse-racing-parser-parent</artifactId>
         <groupId>com.robinhowlett</groupId>
-        <version>1.0.0.BUILD-SNAPSHOT</version>
+        <version>1.0.0.RELEASE</version>
         <relativePath/>
     </parent>
 
@@ -16,14 +16,8 @@
 
     <modelVersion>4.0.0</modelVersion>
     <name>horse-racing-parser</name>
-    <!-- FIXME change it to the project's website -->
-    <url>http://www.example.com</url>
-
-    <properties>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.compiler.source>1.8</maven.compiler.source>
-        <maven.compiler.target>1.8</maven.compiler.target>
-    </properties>
+    <description>A foundation to build horse racing-related parsers on top of</description>
+    <url>https://github.com/robinhowlett/horse-racing-parser</url>
 
     <dependencies>
         <dependency>
@@ -31,5 +25,43 @@
             <artifactId>horse-racing-data-model</artifactId>
         </dependency>
     </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>test-jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
+    <licenses>
+        <license>
+            <name>MIT License</name>
+            <url>http://www.opensource.org/licenses/mit-license.php</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
+    <issueManagement>
+        <url>https://github.com/robinhowlett/horse-racing-parser/issues</url>
+        <system>GitHub Issues</system>
+    </issueManagement>
+
+    <scm>
+        <url>https://github.com/robinhowlett/horse-racing-parser</url>
+        <connection>scm:git:https://github.com/robinhowlett/horse-racing-parser.git
+        </connection>
+        <developerConnection>
+            scm:git:git@github.com:robinhowlett/horse-racing-parser.git
+        </developerConnection>
+    </scm>
 
 </project>
